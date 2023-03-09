@@ -1,0 +1,1017 @@
+$primary-color: #1955cc;
+$secondary-color: #dcb200;
+$fontSize_parg: 20px;
+$fontSize_title: 50px;
+$accordion-icon-width : 90%;
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+//  ==================== Academic_Page ====================
+
+.academic_page {
+    background-image: url(2.webp);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    .content_academic_page{
+       z-index: 10;
+        // padding-right: 200px;
+
+        h1 {
+            font-size: 50px;
+            font-weight: 900;
+        }
+        h3 {
+            padding: 10px 0;
+            font-size: $fontSize_parg;
+        }
+        p{
+            width: 40%;
+            font-size: $fontSize_parg;
+        }
+    }
+
+    .overlay {
+        background-color: rgba(0, 0, 0, 0.328);
+        position: absolute;
+        top: 0;
+        height: 70vh;
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 1202.98px) {
+    .academic_page {
+        
+        .content_academic_page {
+           
+            p {
+                width: 90%;
+            }
+        }
+    }
+}
+@media (max-width: 702.98px) {
+    .academic_page {
+        
+        .content_academic_page {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+
+            p {
+                width: 100%;
+            }
+        }
+    }
+}
+
+//  ==================== Navbar_Academic_Page ====================
+
+.navbar_academic_page {
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16);
+    position: sticky !important;
+    background-color: white;
+    top: 0;
+    transition: 1s;
+    z-index: 20;
+
+    ul {
+            width: 800px;
+            justify-content: space-between;
+        li { 
+            a {
+                font-size: $fontSize_parg !important;
+                cursor: pointer;
+            }
+            
+        }
+        
+    }
+    .share_icon {
+        font-size: 15px !important;
+        padding-left: 10px;
+    }
+}
+
+
+//  ==================== why_program ====================
+
+.why_program {
+    padding: 50px 20px;
+
+    h2 {
+        font-size: $fontSize_title  ;
+        font-weight: bold;
+        color: $primary-color;
+    }
+
+    .desc_why_program {
+        font-size: $fontSize_parg;
+        padding: 10px 0;
+    }
+
+    h3 {
+        font-size: 25px ;
+        font-weight: 900;
+        color: $primary_color;
+    }
+    .big_level{
+        .div_level {
+            border-top: 4px solid $primary_color;
+            padding: 20px 0;
+            box-shadow: 0px 2px 10px 0 rgba(57, 57, 57, 0.16);
+            border-radius: 3px;
+    
+            .level  {
+                font-size: 18px;
+                padding-top: 25px;
+                line-height: 1.5;
+            }
+            .desc_level {
+                font-size: 19px;
+                padding-top: 22px;
+                font-weight: 600;
+                line-height: 1.5;
+            }
+            .book_icon {
+                color: $primary_color;
+            }
+            .line_div_level{
+                display: flex;
+                justify-content: center;
+                margin: 20px 0;
+                hr {
+                    width: 90%;
+                }
+            }
+            h4 {
+                font-size: 20px;
+                font-weight: 600;
+            }
+            p {
+                font-size: 18px;
+            }
+            .tooltip_level {
+                border-radius: 50%;
+                width: 23px;
+                height: 26px;
+                border: 2px solid rgb(174, 172, 172);
+                font-weight: 700;
+                font-size: 15px;
+                color: gray;
+                margin-top: 5px;
+            }               
+        }
+        .btn_join{
+            // z-index: 1;
+            display: inline-block;
+            text-decoration: none;
+            text-transform: uppercase;
+            color: $primary_color;
+            font-size: 20px;
+            font-weight: 900;
+            border-radius: 4px;
+            border: 2px solid $primary_color;
+            padding: 13px 20px;
+            position: relative;
+            margin: 0 auto;
+            min-width: 270px;
+            text-align: center;
+            width: 200px;
+            &:hover{
+                background-color: $secondary-color;
+                color: white;
+                border: none;
+                transition: 0.3s all ease-in-out;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+@media (max-width: 570.98px) {
+    .why_program {
+        .big_level {
+            .div_level {
+                margin-right: 2px;
+            }
+        }
+    }
+}
+
+//  ==================== course_info ====================
+
+.course_info {
+    background-image: url(3.jpeg);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-direction: column;
+    height: 70vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    .overlay {
+        background-color: rgba(0, 0, 0, 0.222);
+        position: absolute;
+        top: 0;
+        height: 70vh;
+        width: 100%;
+        }
+    .data_course_info {
+        z-index: 1;  
+
+        h2 {
+            font-size: 40px;
+            color: $primary-color;
+            font-weight: 900;
+        }
+        p {
+            font-size: $fontSize_parg;
+            width: 60%;
+        }
+        .btn_contact {
+            button:nth-child(1){
+                background:linear-gradient(90deg, rgba(220, 178, 0, 1) 0%, rgba(159, 149, 63, 1) 100%);;
+                padding: 18px 45px;
+                color: white;
+                font-weight: 900;
+                border-radius: 4px;
+                box-shadow: 0px 1px 9.79px 1.21px rgb(0 0 0 / 10%);
+                font-size: 20px;
+                font-weight: bold;
+            }
+            button:nth-child(2){
+                padding: 18px 45px;
+                border-radius: 4px;
+                box-shadow: 0px 1px 9.79px 1.21px rgb(0 0 0 / 10%);
+                font-size: 20px;
+                color: $primary-color;
+                font-weight: bold;
+                margin-top: 10px;
+
+                .icon_whatsapp {
+                    margin-left: 10px;
+                }
+            } 
+        }
+        h3 {
+            margin-top: 30px;
+            font-size: $fontSize_parg;
+
+            a {
+                color: black;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+@media (max-width: 1202.98px) {
+    .course_info {
+
+        .data_course_info {
+
+            p {
+                width: 70%;
+            }
+        }
+    }
+}
+
+@media (max-width: 767.98px) {
+    .course_info {
+
+        .data_course_info {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+
+            p {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media (max-width: 567.98px) {
+    .course_info {
+        padding: 300px 0;
+    }
+}
+
+@media (max-width: 420.98px) {
+    .course_info {
+        padding: 350px 0;
+
+        .overlay {
+            background-color: rgba(0, 0, 0, 0.222);
+            position: absolute;
+            top: 0;
+            height: 700px;
+            width: 100%;
+        }
+    }
+}
+
+
+//  ==================== Course_Of_Study ====================
+
+.course_of_study {
+    padding: 100px 0;
+    h2 {
+        font-size: $fontSize_title;
+        font-weight: 900;
+        padding: 10px 0;
+        color: #1955cc;
+        font-weight: 900;
+    }
+    h3 {
+        color: $secondary-color;
+        font-weight: bolder;
+    }
+    p {
+        font-size: $fontSize_parg;
+        padding-bottom: 30px;
+    }
+
+    .reade_btn{
+        color: $primary-color;
+        border: 2px solid $primary-color !important;
+        font-weight: 900;
+
+        &:hover {
+            background-color: $secondary-color;
+            color: white;
+        }
+    }
+}
+
+@media (max-width: 992.98px) {
+    .course_of_study {
+        p {
+            font-size: 15px;
+          }
+    }
+}
+
+@media (max-width: 572.98px) {
+    .course_of_study {
+        text-align: center;
+    }
+}
+
+//  ==================== Employees ====================
+
+.employees {
+    background-image: url(8.png);
+    text-align: center;
+    height: 570px;
+    position: relative;
+    padding-top: 100px;
+
+    .data_employees{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: white;
+        padding: 40px 0;
+        position: sticky;
+        z-index: 1;
+        
+        h2 {
+            color: $primary-color;
+            font-weight: bolder;
+        }
+
+        p {
+            width: 80%;
+            font-size: $fontSize_parg;
+            padding: 20px;
+            
+        }
+
+        .img_employees {
+            width: 140px;
+
+            img {
+                width: 117px;
+            }
+        }
+        
+    }
+    .overlay {
+        background-color: rgba(0, 0, 0, 0.053);
+        position: absolute;
+        top: 0;
+        height: 570px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 1200.98px) {
+    .employees {
+        .data_employees {
+            .row {
+                margin-right: 60px;
+            }
+
+            .img_employees {
+                img {
+                    width: 100px;
+                }
+            }
+        }
+
+        .col_empty {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 992.98px) {
+    .employees {
+        height: 570px;
+        .data_employees {
+            .row {
+                margin-right: 0;
+          
+                .img_employees {
+                    width: 110px;
+                }
+            }
+        }
+        .overlay {
+        height: 570px;
+        }
+    }
+}
+
+@media (max-width: 767.98px) {
+    .employees {
+        height: 700px;
+
+        .data_employees {
+            .row {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            
+        }
+
+        .overlay {
+            height: 700px;
+        }
+    }
+}
+
+@media (max-width: 400.98px) {
+    .employees {
+        height: 700px;
+        .data_employees {
+            img {
+                height:80px ;
+                width: 80px;
+            }
+        }
+        .overlay {
+            height: 700px;
+        }
+    }
+}
+
+//  ==================== Business ====================
+
+.business {
+    padding: 50px 0;
+    background-color: rgba(128, 128, 128, 0.132);
+    .title_business {
+        padding-bottom: 50px;
+        h2 {
+            text-align: center;
+            padding: 10px 0;
+            font-size: 40px;
+            font-weight: 900;
+            font-weight: bolder;
+            color: $primary-color;
+        }
+        p {
+            text-align: center;
+            line-height: 1 ;
+            font-size: $fontSize_parg;
+        }
+    }
+
+    .img_business {
+        text-align: center;
+        padding-top: 20px;
+        img{
+            width: 90%;
+        }
+    }
+
+    .desc_business {
+        
+        h3 {
+            font-size: 25px;
+            font-weight: 600;
+            padding-top: 20px;
+            color: $secondary-color;
+            font-weight: bolder;
+        }
+
+        p {
+            font-size: $fontSize_parg;
+        }
+    }
+}
+
+//  ==================== Info_Academic ====================
+
+.info_academic {
+    background-color: $secondary-color;
+    text-align: center;
+    padding: 100px 20px;
+    color: white;
+
+    h2 {
+        font-size: 40px;
+        font-weight: 900;
+        color: $primary-color;
+        
+    }
+    p {
+        font-size: 25px;
+    }
+    .btn_info_academic {
+        button:nth-child(1){
+            background-color: white;
+            color: $primary-color;
+            font-size: 25px;
+            font-weight: bold;
+            padding: 10px 60px;
+            border-radius: 6px;
+            border: 0;
+
+            &:hover {
+                box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.267);            }
+                
+           
+        }
+        button:nth-child(2) {
+            background-color: transparent;
+            color: white;
+            font-size: 25px;
+            font-weight: bold;
+            padding: 8px 60px;
+            border-radius: 6px;
+            border: 2px solid white;
+            &:hover {
+                box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.267);
+                background-color: $primary-color;
+                border: 0;
+                transition: 0.4s;
+            }
+        }
+        
+    }
+}
+
+@media (max-width:767px) {
+    .info_academic {
+        .btn_info_academic {
+            button:nth-child(1){
+                margin-bottom: 20px;
+                width: 310px;
+            }
+        }
+    }
+}
+@media (max-width:380px) {
+    .info_academic {
+        .btn_info_academic {
+            button:nth-child(1){
+                width: 100%;
+            }
+        }
+    }
+}
+
+//  ==================== Other_Courses ====================
+
+.other_courses {
+    padding: 100px 10px;
+    h2 {
+        font-size: 40px;
+        font-weight: 900;
+    }
+    p {
+        font-size: $fontSize_parg;
+    }
+    .desc_other_courses {
+        margin-bottom: 50px;
+    }
+    .card {
+        padding: 50px 10px;
+        border:2px solid $secondary-color;
+        position: relative;
+
+        &:hover {
+            border-color: $primary-color;
+            transition: 0.5s all ease;
+        }
+        h4 {
+            font-size: $fontSize_parg;
+            font-weight: 600;
+            padding-bottom: 10px;
+        }
+        .body_card {
+            padding-bottom: 40px;
+            h3 {
+                font-size: 22px;
+                font-weight: 700;
+            }
+        
+            h4 {
+                font-size: 18px;
+                font-weight: 600;
+            }
+        }
+        button {
+            background-color: $primary-color;
+            color: white;
+            font-size: $fontSize_parg;
+            font-weight: bold;
+            padding: 8px 60px;
+            border-radius: 6px;
+            border: 2px solid white;
+            position: absolute;
+            bottom: -25px;
+            right: 60px;
+
+            &:hover {
+                border: 0;
+                background-color: #dcb200;
+                box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.267);
+            }
+        }
+    }
+
+}
+
+
+@media (max-width:1200px) {
+   .other_courses {
+        .card {
+            button {
+                padding: 8px 20px;
+                right: 15%;
+            }
+    }
+   }
+}
+@media (max-width:992px) {
+   .other_courses {
+        .card {
+            button {
+                right: 21%;
+            }
+            .btn3_course {
+                right: 27%;
+            }
+    }
+   }
+}
+@media (max-width:767px) {
+   .other_courses {
+        .card {
+            button, .btn3_course {
+                right: 31%;
+            } 
+    }
+   }
+}
+@media (max-width:557px) {
+   .other_courses {
+        .card {
+            button, .btn3_course {
+                right: 26%;
+            } 
+    }
+   }
+}
+@media (max-width:400px) {
+   .other_courses {
+        .card {
+            button, .btn3_course {
+                right: 20%;
+            } 
+    }
+   }
+}
+
+
+//  ==================== Accordion_Question ====================
+
+.accordion_question {
+    background-color: rgba(0, 0, 0, 0.040);
+    h2 {
+        text-align: center;
+        font-size: 50px;
+        font-weight: 900;
+        color: $primary-color;
+    }
+    .accordion {
+        width: 70%;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+
+        .accordion-item {
+            background-color: rgba(0, 0, 0, -0.040);
+        }
+
+        .accordion-button {
+            background-color: rgba(0, 0, 0, 0.080) !important;
+            width: 100%;
+            font-size: $fontSize_parg;
+            font-weight: 600;
+            padding:20px 40px;
+            border-bottom: 3px solid $secondary-color;
+            &::after{
+                position: absolute;
+                left: 20px;
+            }
+            &.collapsed {
+                border-radius: 25px 50px;
+            }
+        }
+        .accordion-collapse {
+            border-bottom:2px solid $primary-color !important;
+            font-size: $fontSize_parg;
+        }
+    }
+}
+
+@media (max-width:992px) {
+    .accordion_question {
+        .accordion {
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width:576px) {
+    .accordion_question {
+        .accordion {
+            .accordion-button {
+                font-size:18px;
+            }
+        }
+    }
+}
+
+@media (max-width:490px) {
+    .accordion_question {
+        .accordion {
+            .accordion-button {
+                font-size:15px;
+                padding: 20px 20px;
+            }
+        }
+    }
+}
+
+@media (max-width:420px) {
+    .accordion_question {
+        .accordion {
+            .accordion-button {
+                font-size:13px;
+            }
+        }
+    }
+}
+
+//  ==================== Info_Academic_Tow ====================
+
+.info_academic_tow {
+    background-color: rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 100px 20px;
+
+    h2 {
+        font-size: 40px;
+        font-weight: 900;
+        color: $primary-color;
+    }
+
+    p {
+        font-size: 25px;
+    }
+
+    button{
+        background-color: transparent;
+        color: $primary-color;
+        font-size: 25px;
+        font-weight: bold;
+        padding: 8px 60px;
+        border-radius: 6px;
+        border: 2px solid $primary-color;
+
+        &:hover {
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.267);
+            border-color: $secondary-color;
+            background-color: $secondary-color;
+            color: white;
+            transition: 0.4s;
+        }
+    }
+
+    }
+
+@media (max-width:767px) {
+    .info_academic_tow {
+        .btn_info_academic_tow {
+            button:nth-child(1) {
+                margin-bottom: 20px;
+                width: 310px;
+            }
+        }
+    }
+}
+
+@media (max-width:380px) {
+    .info_academic_tow {
+        .btn_info_academic_tow {
+            button:nth-child(1) {
+                width: 100%;
+            }
+        }
+    }
+}
+
+
+//  ==================== Student_Testimonials ====================
+
+.student_testimonials {
+    padding: 80px 0;
+    background-color: rgba(0, 0, 0, 0.040);
+    position: relative;
+    
+    h2 {
+        font-size: $fontSize_title;
+        font-weight: 900;
+        color: $primary-color;
+        padding-bottom: 20px;
+    }
+    p {
+        padding-bottom: 20px;
+        font-size: $fontSize_parg;
+        width: 80%;
+    }
+    .img_video {
+        position: relative;
+        cursor: pointer;
+
+        img {
+            width: 90%;
+        }
+
+// ======== Spin animation ========
+
+        @keyframes spin {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        .stroke-dotted {
+            opacity: 0;
+            stroke-dasharray: 4, 5;
+            stroke-width: 1px;
+            transform-origin: 50% 50%;
+            animation: spin 4s infinite linear;
+            transition: opacity 1s ease,
+                stroke-width 1s ease;
+        }
+
+        .stroke-solid {
+            stroke-dashoffset: 0;
+            stroke-dashArray: 300;
+            stroke-width: 4px;
+            transition: stroke-dashoffset 1s ease,
+                opacity 1s ease;
+        }
+
+        .icon {
+            transform-origin: 50% 50%;
+            transition: transform 200ms ease-out;
+        }
+        
+        #play:hover {
+            .stroke-dotted {
+                stroke-width: 4px;
+                opacity: 1;
+            }
+
+            .stroke-solid {
+                opacity: 0;
+                stroke-dashoffset: 300;
+            }
+
+            .icon {
+                transform: scale(1.05);
+            }
+        }
+
+        #play {
+            cursor: pointer;
+            position: absolute;
+            top: 43%;
+            left: 55%;
+            transform: translateY(-50%) translateX(-50%);
+        }
+    } 
+        .modal-content {
+            border: 0;
+            background-color: transparent !important;
+        }
+    
+        .modal-header {
+            border: 0;
+    
+        }
+    
+        .modal-body {
+        width: 145% !important;
+            height: 500px !important;
+            margin: 0 !important;
+            left: 22%;
+        }
+    
+    
+        iframe {
+            width: 100%;
+            height: 100%;
+        }
+}
+    
+
+
+@media (max-width:992px) {
+    .student_testimonials {
+        p {
+            width: 100%;
+        }
+
+        .img_video {
+            #play {
+                top: 50%;
+                left: 50%;
+            }
+        }
+        
+    }
+}
+
+@media (max-width:992px) {
+    .student_testimonials {
+        .modal-body {
+            width: 120% !important;
+            left: 12%;
+        }
+        
+    }
+}
+
+@media (max-width: 576px) {
+    .student_testimonials {
+        text-align: center;
+        .img_video {
+           #play {
+            width: 70px;
+           }
+        }
+    }
+}
